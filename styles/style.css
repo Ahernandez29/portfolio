@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #000;
+    --color-secundario: #f6f6f6;
+    --color-beige: #E8DFCA;
+    --color-terciario: #22d4fd;
+    --color-hover: #272727;
+    --color-rojo: red;
+    --fuente-montserrat: 'Montserrat', sans serif;
+    --fuente-krona: 'Krona One' sans serif;
+}
+
+* {
+    padding: 5px;
+    border: 2px solid var(--color-primario);
+    margin: 10px;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+   
+    box-sizing: border-box;
+}
+
+strong {
+    color: var(--color-terciario);
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);
+}
+
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 70px;
+}
+
+.header_menu_link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-rojo);
+    text-decoration: none;
+}
+
+/*clase presentacion de la etiqueta main */
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+    
+}
+
+/*Clase que encapsula el contenido central de la pagina */
+.presentacion_contenido {
+    width: 50%; /*Ancho de el contenido central */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.presentacion_contenido_titulo {
+    color: var(--color-rojo) ;
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+
+}
+/*esta clase representa la etiqueta <p> */
+.presentacion_contenido_texto {
+    color: var(--color-secundario);
+    font-size: 1.5rem; /*Tamano de la letra del parrafo*/
+    font-family: var(--fuente-montserrat); /*Fuente de la letra del parrafo*/
+
+}
+
+/*clase presentacion_enlaces del div que almacena las anclas*/
+.presentacion_enlaces {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    flex-direction: column; /*Organiza en columnas los botones de anclaje de las redes sociales */
+    align-items: center; /* ajustamos los botones para posicionarlos en el centro*/
+    gap: 0px; /*Espacio entre botones de redes sociales (un gap de 0px*/
+}
+
+/* esta clase pertenece al tag <h2> dentro del div*/
+.presentacion_enlaces_subtitulos {
+    font-family: var(--fuente-krona); /*fuente de la letra*/
+    font-size: 1.5rem; /*Tamano de la letra*/
+    font-weight: 400;
+}
+
+/* manipulacion de los botones de anclajes: instagram, linkedin, github*/
+.presentacion_enlaces_link {
+    width: 150%; /* Ancho de la caja del boton instagram, linkedin. etc*/
+    /*background-color: #007bff; *//*color de la caja del boton*/
+    text-align: center; /* posicion del nombre de la red social dentro de la caja*/
+    border-radius: 8px; /*forma de los border o esquinas de la caja*/
+    font-size: 1.5rem; /*tamano de la letra*/
+    font-weight: 600;
+    padding: 21.5px 0; /*Altura de la caja del boton*/
+    text-decoration: none; /*quitamos el subrayado*/
+    color: var(--color-secundario); /*color de la letra*/
+    font-family: var(--fuente-montserrat); /*fuente de la letra*/    
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentacion_enlaces_link:hover {
+    background-color: var(--color-hover);
+    color: var(--color-rojo);
+    font-size: larger;
+    padding: 3%;
+    border: 2px solid var(--color-primario);
+    cursor: pointer;
+    background-color: var(--color-primario);
+}
+
+.presentacion_imagen {
+    width: 50%;
+
+}
+
+.footer {
+    background-color: var(--color-rojo);
+    padding: 1px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 0.9375rem;
+    font-weight: 400;
+
+}
+
+a {
+    color: var(--color-secundario);
+}
+
+
+/*Esta clase representa al tag strong de la etiqueta <p> cuya clase es ugente */
+.advertencia {
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 25px;
+    font-family: var(--fuente-krona);
+    display: contents;
+}
+
+.urgente {
+    color: var(--color-rojo);
+    font-size: 1.5rem;
+}
+
+.lista-experiencia {
+    color: var(--color-secundario);
+}
+
+.lista-estudios {
+    color: var(--color-secundario);
+    display: contents; 
+}
+
+.link_posicion {
+   
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-rojo);
+    text-decoration: none;
+    display: flex;
+    gap: 70px; 
+}
+
+.link-credencial {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none;
+    display: flex;
+    gap: 70px; 
+    border: 2px solid var(--color-primario);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-primario);
+}
+
+.link-credencial:hover {
+    background-color: var(--color-hover);
+    color: var(--color-rojo);
+    font-size: medium;
+    padding: 3%;
+    border: 2px solid var(--color-primario);
+    cursor: pointer;
+    background-color: var(--color-primario);
+}
+
+@media (max-width: 1450px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+    }
+}
+
+@media (max-width: 426px) {
+
+
+    .header_menu {
+        justify-content: center;
+        
+    }
+
+    .presentacion_contenido {
+    width: auto; /*Ancho de el contenido central */
+    display: inline-table;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem;
+    
+}
+
+    .presentacion_imagen {
+        width: 150%;
+    }
+
+    .header_menu {
+        gap: 0rem;
+    }
+
+    .presentacion_enlaces_link:hover {
+    background-color: var(--color-hover);
+    color: var(--color-rojo);
+    font-size: larger;
+    padding: 3%;
+    border: 2px solid var(--color-primrio);
+    cursor: pointer;
+    background-color: var(--color-primario);
+    }
+
+    .footer {
+    background-color: var(--color-rojo);
+    padding: 1px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 0.9375rem;
+    font-weight: 400;
+
+    }
+}
